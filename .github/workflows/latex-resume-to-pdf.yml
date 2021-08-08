@@ -20,8 +20,8 @@ jobs:
         with:
           root_file: ${{ steps.find-latex-path.outputs.LATEX_PATH }}
       - name: Release pdf
-        uses: softprops/action-gh-release@v1
+        uses: svenstaro/upload-release-action@v2
         with:
-          files: ${{ steps.calculate-pdf-path.outputs.PDF_PATH }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          file: ${{ steps.calculate-pdf-path.outputs.PDF_PATH }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref }}
