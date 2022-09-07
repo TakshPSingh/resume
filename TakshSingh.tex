@@ -107,10 +107,12 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Illinois, Urbana-Champaign}{Champaign, IL}
-      {Bachelor of Science in Computer Science;  GPA: 3.88}{Aug 2019 -- May 2023}
+      {Bachelor of Science in Computer Science;  GPA: 3.85}{Aug 2019 -- Dec 2022}
       \resumeItemListStart
         \resumeItem{Coursework}
-        {Systems Programming, Probability and Statistics for Computer Science, Data Structures and Algorithms, Computer Architecture, Linear Algebra, Discrete Structures}
+        {Distributed Systems, Machine Learning, Deep Learning, Functional Programming, IoT, Systems Programming, Probability and Statistics, Data Structures, Algorithms, Computer Architecture}
+        \resumeItem{Fun Stuff}
+        {Staff member for largest hackathon in the Midwest: Hackillinois. Helped maintain the backend API for the event, which managed 1000+ users.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -118,6 +120,26 @@
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+  
+  \resumeSubheading
+      {Databricks}{San Francisco, CA}
+      {Software Engineering Intern}{May 2022 - Aug 2022
+      }
+      
+      \resumeItemListStart
+        \resumeItemWithoutBold
+        {
+        Scaled up our test execution infra, by reducing Github API usage for CI status management by 75\%, through a new service that tracked jobs triggered for pull requests independent of Github.
+        }
+        \resumeItemWithoutBold
+        {
+        Proved correctness of new service (match rate between Github and new service above 99\%) through automated script for differential testing.
+        }
+        \resumeItemWithoutBold
+        {
+        Deployed changes to production in shadow mode and verified that the match rate was above 95\% through runtime checks.
+        }
+      \resumeItemListEnd
 
     \resumeSubheading
       {Rubrik}{Remote}
@@ -142,7 +164,7 @@
         \resumeItemWithoutBold
         {
             Increased performance and reduced failure rate for distributed job framework, by automatically managing semaphores for jobs based on their current state, allowing resources to be used more efficiently and fixing correctness bugs. 
-            \color{blue}{(Shortlisted as patent candidate)}
+            \color{blue}
         }
         \resumeItemWithoutBold
         {
@@ -152,25 +174,25 @@
         {
             Increased productivity of support engineers by allowing them to deploy fixes to common bugs more quickly and diagnose problems, by adding command line tools to automate 3 routine support operations in Rubrik clusters.
         }
-        \resumeItemWithoutBold
-        {
-            Improved customer experience by adding alert to automatically detect certain fatal system anomalies to proactively alert Rubrik about them, without any customer intervention, so that they can be fixed even before the customer notices them.
-        }
+        % \resumeItemWithoutBold
+        % {
+        %     Improved customer experience by adding alert to automatically detect certain fatal system anomalies to proactively alert Rubrik about them, without any customer intervention, so that they can be fixed even before the customer notices them.
+        % }
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Hora}{Remote}
-      {Software Engineer Intern}{Jun 2020 - Aug 2020}
-      \resumeItemListStart
-        \resumeItemWithoutBold
-        {
-            Created backend engine for a game (for about 20000 users) that tested user's language skills, awarded coins to them based on their performance, and tracked their history. Also wrote internal application to manually add questions to the game.
-        }
-        \resumeItemWithoutBold
-        {
-            Streamlined process of tracking performance of users across 2 apps, by developing a common micro-service to store their data and refactoring the existing codebase.
-        }
-      \resumeItemListEnd
+    % \resumeSubheading
+    %   {Hora}{Remote}
+    %   {Software Engineer Intern}{Jun 2020 - Aug 2020}
+    %   \resumeItemListStart
+    %     \resumeItemWithoutBold
+    %     {
+    %         Created backend engine for a game (for about 20000 users) that tested user's language skills, awarded coins to them based on their performance, and tracked their history. Also wrote internal application to manually add questions to the game.
+    %     }
+    %     \resumeItemWithoutBold
+    %     {
+    %         Streamlined process of tracking performance of users across 2 apps, by developing a common micro-service to store their data and refactoring the existing codebase.
+    %     }
+    %   \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -209,9 +231,9 @@
 \section{Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: Java, Scala, C/C++, Python, JavaScript}
+     \textbf{Languages}{: Python, Haskell, Scala, Java, C/C++, JavaScript}
      \hfill
-     \textbf{Technologies}{: Docker, Kubernetes, Linux, Node.js}
+     \textbf{Technologies}{: Kubernetes, Linux, Node.js}
    }
  \resumeSubHeadingListEnd
 
